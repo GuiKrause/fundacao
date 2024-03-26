@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family-one: 'Montserrat', sans-serif;
+    --font-family-two: 'Josefin Sans', sans-serif;
+    --header-color: rgba(37, 50, 55, 0.15);
+    --footer-color: rgba(37, 50, 55, 1);
+    --primary-text-color: rgba(51, 51, 51, 0.7);
+    --secondary-text-color: rgba(51, 51, 51, 1);
+    --tertiary-text-color: rgba(251, 255, 255, 1);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+p, li{
+    font-family: var(--font-family-one);
+}
+
+i, .fa {
+    font-size: 2.4rem;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-two);
+}
+
+header {
+    background-color: var(--header-color);
+    width: 100%;
+    height: fit-content;
+}
+
+nav {
+    margin: auto;
+    max-width: 1200px;
+    height: fit-content;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 62px;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.4rem;
+}
+
+div.logo-fundacao {
+    height: 66px;
+    width: 160px;
+
+    background-image: url("../assets/images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+footer h5 {
+    font-size: 1.8rem;
+    color: var(--tertiary-text-color);
+}
